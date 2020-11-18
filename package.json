@@ -10,6 +10,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.0",
+    "styled-components": "^5.2.1",
+    "uniqid": "^5.2.0",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -40,6 +42,7 @@
     ]
   },
   "devDependencies": {
+    "pnotify": "^5.2.0",
     "prop-types": "^15.7.2"
   }
 }
