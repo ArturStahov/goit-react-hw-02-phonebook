@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 const Section = styled.section`
 padding:20px 0px 20px;
@@ -27,3 +28,7 @@ export default function SectionBlock({ title, children }) {
         </Section>
     )
 }
+
+SectionBlock.propTypes = {
+    title: PropTypes.string,
+};

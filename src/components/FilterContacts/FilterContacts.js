@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 const FilterBlock = styled.div`
 width:100%;
@@ -30,3 +31,9 @@ export default function FilterContacts({ value, OnInputFilter }) {
         </FilterBlock>
     )
 }
+
+
+FilterContacts.propTypes = {
+    OnInputFilter: PropTypes.func,
+    value: PropTypes.string
+};

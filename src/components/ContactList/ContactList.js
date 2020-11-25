@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types';
 
 const TaskList = styled.ul`
 max-width:700px;
@@ -49,3 +50,8 @@ export default function ContactList({ items, onDeleteContact }) {
         </TaskList>
     )
 }
+
+ContactList.propTypes = {
+    items: PropTypes.array.isRequired,
+    onDeleteContact: PropTypes.func
+};

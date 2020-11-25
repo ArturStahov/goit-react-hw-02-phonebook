@@ -61,7 +61,6 @@ export default class App extends Component {
         })
     }
 
-
     render() {
         const { nameFilter } = this.state
         const visibleContacts = this.filterContactList();

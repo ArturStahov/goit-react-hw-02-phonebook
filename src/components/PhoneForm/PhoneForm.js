@@ -61,7 +61,7 @@ export default class PhoneForm extends Component {
                 </FormLabel>
                 <FormLabel>
                     Phone:
-                    <input type='text' name='numberValue' onChange={this.handlerInput} value={this.state.numberValue} pattern="\+3\s?[\]{0,1}9[0-9]{2}[\]{0,1}\s?\d{3}{0,1}\d{2}{0,1}\d{2}"
+                    <input type='text' name='numberValue' onChange={this.handlerInput} value={this.state.numberValue}
                         placeholder="+3(___)___-__-__" minLength="13" maxLength='13' required />
                 </FormLabel>
                 <Button type="submit">Add Contact</Button>
