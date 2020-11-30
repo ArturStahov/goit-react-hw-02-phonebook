@@ -1,30 +1,13 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
+import PropTypes from 'prop-types';
+import { Form, FormLabel, Button } from './StyledComponents'
 
-
-const Form = styled.form`
-max-width:100%;
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-`
-const FormLabel = styled.label`
-width:85%;
-margin-bottom:10px;
-display:flex;
-justify-content:space-around;
-`
-const Button = styled.button`
-padding:5px 10px;
-max-width:250px;
-height:40px;
-background-color:green;
-border:none;
-border-radius:0.5rem;
-cursor:pointer;
-`
 
 export default class PhoneForm extends Component {
+
+    static propTypes = {
+        onAddContact: PropTypes.func.isRequired,
+    };
 
     state = {
         nameValue: '',
@@ -39,7 +22,6 @@ export default class PhoneForm extends Component {
         })
     }
 
-
     handlerFormSubmit = e => {
         const { nameValue, numberValue } = this.state
         e.preventDefault();
@@ -50,9 +32,7 @@ export default class PhoneForm extends Component {
         })
     }
 
-
     render() {
-
         return (
             <Form onSubmit={this.handlerFormSubmit}>
                 <FormLabel>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import uniqid from 'uniqid'
-import SectionBlock from './components/Section'
+import SectionBlock from './components/Section/Section'
 import PhoneForm from './components/PhoneForm/PhoneForm'
 import ContactsList from './components/ContactList/ContactList'
 import FilterContacts from './components/FilterContacts/FilterContacts'
